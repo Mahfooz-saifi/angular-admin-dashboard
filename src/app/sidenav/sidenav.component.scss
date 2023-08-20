@@ -1,0 +1,66 @@
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 140px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-icons{
+    font-size: x-large;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #b0eed8;
+    color: blue;
+    border: 1px solid gray;
+    margin: 13px;
+    border-radius: 9px;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  
+  div.content {
+    margin-left: 126px;
+    padding: 1px 16px;
+  }
+  
+
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: none;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+      display: none;
+    }
+  }

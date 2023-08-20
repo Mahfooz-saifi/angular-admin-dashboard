@@ -1,0 +1,21 @@
+<!-- The sidebar -->
+<div class="sidebar">
+    <a  href="#dashboard">
+      <i class="pi pi-th-large card-icons"></i>
+      Dashboard</a>
+    <a class="active" routerLink="comp61">
+      <i class="pi pi-file-edit card-icons"></i>
+      Assessments</a>
+    <a href="#library">
+      <i class="pi pi-folder-open card-icons"></i>
+      My Library</a>
+    <a href="#status">
+      <span class="badge bg-white text-danger my-1" style="border: 1px solid gray;">Admin</span>
+      <i class="pi pi-question-circle card-icons"></i>
+      Round Status</a>
+  </div>
+  
+  <!-- Page content -->
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>

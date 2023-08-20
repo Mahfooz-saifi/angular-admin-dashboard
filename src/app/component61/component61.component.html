@@ -1,0 +1,262 @@
+<div class="row">
+    <div class="card-body">
+        <div class="">
+                     <p-tabView [activeIndex]="activeIndex">
+                <p-tabPanel
+                  *ngFor="let item of items; let i = index"
+                  [header]="item.tabHeader"
+                  [selected]="i == 1"
+                >
+               <!-- </p-tabPanel>  -->
+                    <h5>Assessments Overview</h5>
+                    <div class="row">
+                        <div class="card  shadow-sm col-md-2">
+                            <div class="card-body">
+                                <h6 class="card-title">Total Assessments</h6>
+
+                                <div class="box d-flex" style="margin-top: 1rem;">
+                                    <div class="item1">
+                                        <span> <i class="pi pi-server card-icons"></i></span>
+                                    </div>
+
+                                    <div class="item2">
+                                        <span class=""><strong>34</strong></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm col-md-4">
+                            <div class="card-body">
+                                <h6 class="card-title">Candidates</h6>
+                                <div class="box d-flex">
+                                    <div class="item1 mx-2" style="margin-top: 0.5rem;">
+                                        <i class="pi pi-users card-icons"></i>
+                                    </div>
+
+                                    <div class="item2 border-right">
+                                        <strong class="candidate-quant"> 11,145</strong> <span
+                                            class="text-success mx-1">+89</span>
+                                        <p><small>Total Candidates </small> </p>
+                                    </div>
+                                    <div class="item3">
+                                    </div>
+                                    <div class="item4"><strong class="candidate-quant"> 1,14</strong> <span
+                                            class="text-success mx-1">+89</span>
+                                        <p><small>Who Attampted</small> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm col-md-4">
+                            <div class="card-body">
+                                <h6 class="card-title">Candidates Sources</h6>
+                                <div class="box d-flex">
+                                    <div class="item1" style="margin-top: 0.5rem;">
+                                        <i class="pi pi-globe card-icons"></i>
+                                    </div>
+
+                                    <div class="item2 border-right">
+                                        <strong class="candidate-quant"> 11,000</strong> <span
+                                            class="text-success mx-1">+89</span>
+                                        <p><small>E-mail</small> </p>
+                                    </div>
+                                    <div class="item3">
+                                    </div>
+                                    <div class="item4 border-right">
+                                        <strong class="candidate-quant"> 145</strong> <span
+                                            class="text-success mx-1">+89</span>
+                                        <p><small>Social Share</small> </p>
+                                    </div>
+                                    <div class="item3">
+                                    </div>
+                                    <div class="item5"><strong class="candidate-quant"> 145</strong> <span
+                                            class="text-success mx-1">+89</span>
+                                        <p><small>Unique Link</small> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm col-md-2">
+                            <div class="card-body">
+                                <h6 class="card-title">Total Purpose</h6>
+
+                                <div class="box d-flex" style="margin-top: 1rem;">
+                                    <div class="item1">
+                                        <span> <i class="pi pi-link card-icons"></i></span>
+                                    </div>
+
+                                    <div class="item2">
+                                        <span class=""><strong> 11</strong></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </p-tabPanel>
+                <h5 class="my-4">My Assessment</h5>
+                <div class="row card-container">
+                    <div class="card add-card1 shadow-sm col-md-4 card-radious mb-3" style="max-width: 23rem;" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <div class="card-body">
+
+                            <div class="new-assesment">
+                                <div class="">
+                                    <span class="text-primary"> <i class="pi pi-plus"></i></span>
+                                </div>
+
+                                <div class="">
+                                    <h5>New Assessment</h5>
+                                    <small>From here you can add questions of multiple types like MCQs, subjective (text
+                                        or
+                                        paragraph)!</small>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm col-md-4 card-radious mb-3" style="max-width: 23rem;">
+                        <div class="card-body">
+
+                            <div class="new-assesment-box2">
+                                <div class="new-assesment-item">
+                                    <div><i class="pi pi-briefcase card-icons"></i></div>
+                                    <div><i class="pi pi-ellipsis-v"></i></div>
+                                </div>
+
+                                <div class="item2 my-2">
+                                    <h6>Math Assessment</h6>
+                                    <strong class="">Job</strong> |
+                                    <span><i class="pi pi-calendar"></i> 20 Apr, 2023</span>
+                                </div>
+                                <div class="item-border">
+                                </div>
+
+                                <div class="assessment-content">
+                                    <div class="d-flex">
+                                        <div class="ite">
+                                            <span>00</span>
+                                            <p><small>Duration</small> </p>
+                                        </div>
+                                        <div class="ite mx-2">
+                                            <span>00</span>
+                                            <p><small>Question </small> </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="item-share">
+                                            <i class="pi pi-link"></i> Share
+                                        </div>
+                                        <strong class="lp-pera">LP</strong>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-sm col-md-4 card-radious mb-3" style="max-width: 23rem;">
+                        <div class="card-body">
+
+                            <div class="new-assesment-box3">
+                                <div class="new-assesment-item">
+                                    <div><i class="pi pi-briefcase card-icons"></i></div>
+                                    <div><i class="pi pi-ellipsis-v"></i></div>
+                                </div>
+
+                                <div class="item2 my-2">
+                                    <h6>Math Assessment</h6>
+                                    <strong class="">Job</strong> |
+                                    <span><i class="pi pi-calendar"></i> 20 Apr, 2023</span>
+                                </div>
+                                <div class="item-border">
+                                </div>
+
+                                <div class="assessment-content">
+                                    <div class="d-flex">
+                                        <div class="ite">
+                                            <span>00</span>
+                                            <p><small>Duration</small> </p>
+                                        </div>
+                                        <div class="ite mx-2">
+                                            <span>00</span>
+                                            <p><small>Question</small> </p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="item-share">
+                                            <i class="pi pi-link"></i> Share
+                                        </div>
+                                        <strong class="lp-pera">LP</strong>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </p-tabView>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create new assessment</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Name of assessment</label>
+                        <input class="form-control form-control-lg" type="text" placeholder="Type Here">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Purpose of the test is</label>
+                        <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Description</label>
+                        <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Skills</label>
+                        <div class="card p-fluid">
+                            <p-chips placeholder="Type here for add skills"></p-chips>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Duration of assessment</label>
+                        <input class="form-control form-control-lg" type="text" placeholder="HH:MM:SS">
+
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer ">
+                <div class="col-md-12" style="display: grid;">
+                    <button type="button" class="btn btn-primary ">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

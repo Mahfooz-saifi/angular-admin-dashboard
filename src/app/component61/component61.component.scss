@@ -1,0 +1,78 @@
+.card-icons{
+    font-size: 1.3rem;
+    background: #ebebeb;
+    padding: 8px;
+    border-radius: 7px;
+    margin-right: 0.5rem;
+    color: blue;
+}
+small {
+    font-size: small !important;
+}
+.candidate-quant{
+    font-size: 1.2rem;
+}
+
+.box{
+    display: flex;
+    // align-items: center;
+}
+.item3{
+    border-left: 1px solid #dfc9c9;
+    margin: 10px;
+}
+.new-assesment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.pi-plus{
+    margin-top: 2rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    background: antiquewhite;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+.new-assesment-item{
+    display: flex;
+    justify-content: space-between
+}
+.assessment-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-share{
+    border: 1px solid gray;
+    border-radius: 17px;
+    padding: 7px;
+}
+.item-border{
+    border-bottom: 1px dashed #d1cccc;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+.lp-pera{
+    margin-left: 9px;
+    background: #8f2df7;
+    padding: 10px;
+    border-radius: 52%;
+    color: white;
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+}
+.add-card1{
+    border: 1px dashed #c2bdbd;
+    background: aliceblue;
+    cursor: pointer;
+}
+.card-radious{
+    border-radius: 10px;
+}
